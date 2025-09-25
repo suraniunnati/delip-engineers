@@ -1,0 +1,253 @@
+.banner {
+  @apply h-[650px] bg-no-repeat bg-cover bg-center flex justify-center items-center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0.421)), url('/assets/images/banner.jpg');
+}
+
+.banner .banner-inner {
+  @apply w-[50%] max-768:w-[90%];
+}
+
+.main-inner {
+  perspective: 1000px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.services-part .main-inner .inner-part {
+  @apply rounded-[20px] overflow-hidden h-[300px] min-1024:h-[400px];
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.services-part .match-image {
+  @apply flex justify-center items-center w-full h-full border bg-cover;
+}
+
+.services-part .name-box {
+  @apply absolute max-768:top-[-10%] max-768:left-[-10%] max-1024:left-[20%] max-1024:top-[18%] top-[25%] left-[30%] bg-orange/70 rounded-full h-200 w-200 flex justify-center items-center text-center shadow-md shadow-white p-40;
+}
+
+.main-inner:hover .inner-part {
+  transform: rotateY(180deg);
+}
+
+.card {
+  perspective: 1000px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-front {
+  background: #000;
+  color: white;
+}
+
+.card-back {
+  @apply text-white flex items-center justify-center flex-col text-center;
+  transform: rotateY(180deg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.756), rgba(0, 0, 0, 0.421)), url('https://st2.depositphotos.com/8843414/12482/v/450/depositphotos_124821810-stock-illustration-abstract-telecommunication-future-technology-innovation.jpg');
+}
+
+.about-part .title::before,
+.our-machines .machine-title::before,
+.product .productBox .title::before,
+.about-us .title h2::before{
+  @apply content-[''] absolute bottom-0 left-0 h-3 w-50 bg-orange border-s-4 border-dotted rounded-e-sm;
+}
+
+.about-part .about-inner-part img {
+  @apply w-[200px] h-[250px] max-767:w-[125px] max-767:h-[150px]
+}
+
+.about-inner-part img:hover {
+  @apply shadow-md shadow-gray-2
+}
+
+.about-img:hover{
+  @apply shadow-xl shadow-gray
+}
+.about-img::before{
+  @apply content-[''] absolute top-0 left-0 h-full w-full hidden;
+  background: linear-gradient(rgba(128, 128, 128, 0.168),rgba(0, 0, 0, 0.481))
+}
+.about-img:hover::before{
+  @apply block;
+}
+
+.mini-banner {
+  @apply bg-cover bg-center;
+  background-image: url('https://img.freepik.com/premium-photo/vintage-lathe-low-key-selective-focus_690955-558.jpg');
+}
+
+.main-text {
+  -webkit-text-stroke: 1px rgba(213, 213, 213, 0.371);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-stroke: 1px white;
+}
+
+.our-machines::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-[50%] -z-1;
+  background: linear-gradient(to right, #f8c281 20%, #fab560, #f58e11 50%)
+}
+
+.our-machines .swiper-button-prev::after,
+.our-machines .swiper-button-next::after {
+  @apply hidden;
+}
+
+.our-machines .swiper-button-prev,
+.our-machines .swiper-button-next {
+  @apply mt-40;
+}
+
+.our-machines .swiper-wrapper .swiper-slide {
+  @apply flex justify-center items-center bg-black h-full w-full p-20 bg-no-repeat bg-cover bg-center rounded-xl shadow-md shadow-gray;
+  background-image: url('https://www.shutterstock.com/image-vector/water-surface-magic-neon-glow-600nw-2483884465.jpg')
+}
+
+.our-machines .swiper-wrapper .swiper-slide .text {
+  @apply absolute bottom-10 left-20;
+}
+
+.our-machines .swiper-wrapper .swiper-slide {
+  @apply w-full overflow-hidden
+}
+
+.our-machines .swiper-wrapper .swiper-slide img {
+  @apply h-[300px] min-768:h-[400px]
+}
+
+.contact .icon i {
+  @apply text-white;
+}
+.contact .icon{
+  @apply mt-6 bg-orange !h-25 !w-25 rounded-full flex justify-center items-center
+}
+
+.contact ul li {
+  @apply flex gap-10 font-medium mb-15;
+}
+.contact ul li a{
+  @apply font-medium text-body-2
+}
+
+.contact .map {
+  @apply overflow-hidden transition
+}
+
+.contact .shap {
+  @apply absolute top-0 right-0 w-[50%] h-[80%] -z-1 bg-orange/30;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.contact .shap-2 {
+  @apply absolute top-0 right-0 w-[50%] h-[60%] -z-1 bg-orange/30;
+ clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.product {
+  @apply grid grid-cols-4 gap-40 max-768:grid-cols-1 max-1024:grid-cols-2;
+}
+
+.product .productBox {
+  @apply flex flex-col rounded-[30px] shadow-md shadow-gray overflow-hidden;
+}
+
+.product .productBox .shap {
+  @apply absolute bottom-0 left-0 w-full h-[90%] -z-1 bg-orange/30;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.product .productBox .img {
+  @apply flex justify-center items-center;
+}
+
+.product .productBox .img img {
+  @apply w-full h-[250px] object-center;
+}
+
+.product .productBox .content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  line-height: 1.4;
+
+}
+
+.product .productBox .content.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: auto;
+  max-height: 800px;
+}
+
+.highlight{
+  @apply flex items-center gap-10; 
+}
+ .highlight-icon{
+  @apply bg-orange flex justify-center items-center h-35 w-35 rounded-full text-xl text-white;
+}
+.our-complany{
+  @apply flex flex-col justify-center  bg-orange/10 rounded-[20px] p-30 
+}
+
+/* services */
+
+.services .services-items{
+  @apply rounded-t-[50%] shadow-2xl max-1024:py-50 p-30 min-1024:p-40  flex 
+  flex-col items-center justify-center text-center relative bg-orange/20 border-4 border-transparent max-768:mb-30 border-b-0;
+}
+.services .services-items .services-icon{
+  @apply h-60 w-60 rounded-full bg-orange border-4 border-white flex justify-center items-center absolute bottom-[-25px] text-white ;
+}
+.services .services-items:hover{
+  @apply bg-white border-orange duration-300;
+}
+.services .services-items:hover .services-icon{
+  @apply text-black bg-white duration-300 border-t border-orange;
+}
+.services-poster{
+  @apply border bg-orange h-[300px] w-full text-white bg-no-repeat bg-cover bg-center rounded-xl;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.358),rgba(0, 0, 0, 0.516)), url('/assets/images/services.jpg');
+}
+.process-items{
+  @apply flex flex-col items-center justify-center p-30 text-center rounded-xl bg-orange/50;
+}
+.process-items .process-icon{
+  @apply text-orange text-[30px]
+}
+.process-items .process-img{
+  @apply pt-[66.67%] w-full h-full relative mt-10
+}
+.process-items .process-img img{
+  @apply absolute top-0 left-0 w-full h-full object-cover rounded-xl
+}
+
+

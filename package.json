@@ -1,0 +1,17 @@
+{
+  "name": "dilip-engineers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/app.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "json-server": "^1.0.0-beta.3",
+    "tailwindcss": "^4.1.13"
+  }
+}

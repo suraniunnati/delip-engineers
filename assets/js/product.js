@@ -1,0 +1,42 @@
+function productData() {
+  fetch(`http://localhost:3000/product`)
+    .then((r) => {
+      return r.json();
+    })
+    .then((res) => {
+      console.log(res);
+      document.getElementById("box").innerHTML = view(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+function view(arr) {
+  return arr
+    .map((ele) => {
+      return ` <div class="productBox">
+      <a href="singleProduct.html?id=${ele.id}">
+                <div class="img p-10">
+                    <img src="${ele.img}" alt="${ele.title}">
+                </div>
+                <div class="relative p-20 h-full">
+                    <div class="shap"></div>
+                    <div class="title title-bold relative">
+                        <h3>${ele.title}</h3>
+                    </div>
+                    <div class="content text-body-3 pt-10 gray-2">
+                        <p><span class="font-bold">Details: </span>${ele.des}</p>
+                    </div>
+                    <div class="custom-btn flex justify-center items-center pt-20">
+                        <a href="" class="btn btn-orange read-more">Read More</a>
+                    </div>
+                </div>
+                  </a>
+            </div>`;
+    })
+    .join("");
+}
+
+productData();
+

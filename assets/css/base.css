@@ -1,0 +1,52 @@
+body{
+    @apply m-0 p-0 box-border font-body;
+}
+
+.title-white h1,
+.title-white h2,
+.title-white h3{
+  @apply text-white
+}
+
+.h1{
+  @apply text-60 leading-61 font-body;
+}
+h1 {
+  @apply text-heading-1 leading-81 font-bold max-1440:text-heading-1-tablet max-1440:leading-61 max-768:text-heading-1-mobile max-768:leading-55 font-outfit;
+}
+h2 , .h2 {
+  @apply text-heading-2 leading-60 max-1440:text-heading-2-tablet max-1023:text-heading-2-mobile max-1023:leading-40 font-bold font-outfit;
+}
+h3, .h3 {
+  @apply text-heading-3 leading-41 max-1023:text-heading-3-mobile max-1023:leading-31 font-outfit;
+}
+h4, .h4 {
+  @apply text-heading-4 leading-30 max-575:text-heading-4-mobile max-575:leading-25 font-outfit;
+}
+h5, .h5 {
+  @apply text-heading-5 leading-25 font-outfit;
+}
+h6, .h6 {
+  @apply text-heading-6 leading-20;
+}
+
+.content {
+  @apply relative flex flex-col w-full;
+}
+
+.content p {
+  @apply leading-20 font-medium not-italic relative block m-0 p-0;
+  -webkit-font-smoothing: antialiased;
+}
+.content p + p {
+  @apply mt-[20px];
+}
+.content.white p {
+  @apply text-white;
+}
+.content.gray p {
+  @apply text-gray;
+}
+.content.gray-2 p {
+  @apply text-gray-2;
+}

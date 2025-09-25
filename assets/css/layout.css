@@ -1,0 +1,68 @@
+/* header */
+header{
+    @apply min-768:h-100 absolute top-0 w-full z-10 max-768:bg-orange;
+}
+header .headtop{
+    @apply w-full;
+    background: linear-gradient(to right,#f8c281 20%,#fab560,#f58e11 50%)
+}
+header .headbottom .logo{
+    @apply flex justify-start items-center min-768:pe-50 rounded-br-full min-768:bg-[#f8c281] h-full min-768:absolute top-0;
+}
+header .headbottom .logo img{
+    @apply max-768:w-[150px]
+}
+header .headbottom nav ul{
+    @apply flex justify-end items-center gap-40 text-right px-50;
+}
+header .headbottom nav ul li a{
+    @apply font-bold uppercase relative hover:text-orange duration-500 text-white !pb-5;
+}
+header #mobile-menu ul li a{
+    @apply relative p-2;
+}
+header .headbottom nav ul li a::before,
+header #mobile-menu ul li a::before,
+footer .footer-part:nth-child(2) ul li a::before{
+    @apply content-[''] absolute bottom-0 left-0 h-2 w-30 bg-orange border-s-3 border-dotted rounded-e-sm;
+}
+header .headbottom nav ul li a:hover::before,
+header #mobile-menu ul li a:hover::before,
+footer .footer-part:nth-child(2) ul li a:hover::before{
+  @apply  w-full duration-300 ease-in-out;
+}
+header .info ul li{
+    @apply flex items-center gap-10
+}
+header .info ul li .icon,footer .footer-part .icon{
+    @apply h-22 w-22 rounded-full bg-black flex justify-center items-center;
+}
+header .info ul li a:hover{
+    @apply text-white duration-300
+}
+
+/* footer */
+footer{
+      background: linear-gradient(to bottom,#f8c38155 20%,#fab5605b,#f58e115a 50%)
+}
+footer .footer-top {
+    @apply rounded-tl-[45%] max-768:rounded-tl-[30%];
+     background: linear-gradient(to top,#f8c38155 20%,#fab5605b,#f58e1182 70%)
+}
+footer .footer-part{
+    @apply flex flex-col gap-15 relative max-768:w-full text-body-2 font-medium;
+}
+footer .footer-part .icon i{
+    @apply text-orange
+}footer .footer-part ul{
+    @apply flex flex-col gap-10
+}
+footer .footer-part ul li{
+    @apply flex gap-10 relative;
+}
+footer .footer-part ul li a:hover,footer .footer-bottom p a:hover{
+    @apply text-orange duration-300;
+}
+/* footer .footer-part:nth-child(2) ul li a{
+    @apply !w-fit;
+} */
