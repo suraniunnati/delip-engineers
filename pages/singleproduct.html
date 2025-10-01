@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
+    <title>singleproduct</title>
      <link rel="icon" href="../assets/images/small-logo.png">
     <link rel="stylesheet" href="/dist/style.css">
-
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -19,11 +18,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- header Start -->
-    <header>
+    <header >
         <div class="headtop min-768:h-[35%] flex items-center min-768:px-50 p-5 w-full">
             <div class="info w-full">
                 <ul class="flex max-768:flex-col justify-end w-full gap-5 min-768:gap-40 font-semibold text-body-3">
@@ -68,22 +70,19 @@
     </header>
     <!-- header End -->
 
-
-    <!-- mini-banner Start -->
+     <!-- mini-banner Start -->
     <div class="mini-banner py-50 max-768:pt-100">
         <div class="flex flex-col justify-center items-center text-center relative py-60">
             <div class="title title-bold title-white p-10">
                 <h2 class="h1 main-text absolute">Product</h2>
-                <h1 class="mt-10 ms-30 max-768:mt-20">Product(machines)</h1>
+                <h1 class="mt-10 ms-30 max-768:mt-20">Single Product</h1>
             </div>
         </div>
     </div>
     <!-- mini-banner End -->
 
-    <section class="px-50 product py-30 min-1024:py-80" id="box">
-       
-    </section>
-
+        <div id="shown" >
+        </div>
 
    <!-- footer Start -->
     <footer>
@@ -148,7 +147,7 @@
                 </ul>
             </div>
         </div>
-     <div class="footer-bottom flex flex-wrap justify-between items-center mx-50 border-t py-15">
+      <div class="footer-bottom flex flex-wrap justify-between items-center mx-50 border-t py-15">
             <div class="copyright text-body-3">
                  <p>© <span id="year" class="font-medium"></span> Dilip Engineers</p>
             </div>
@@ -159,8 +158,18 @@
     </footer>
     <!-- footer End -->
 </body>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/product.js"></script>
+<script src="../assets/js/singleproduct.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/product.js"></script>
+<script>
+    var swipers = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+</script>
 
 </html>

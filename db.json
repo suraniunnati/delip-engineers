@@ -2,81 +2,185 @@
     "product": [
         {
             "id": "1",
-            "img": "https://i.ibb.co/0y9p8SMx/Automatic-HDPE.png",
+            "img1": "https://i.ibb.co/0y9p8SMx/Automatic-HDPE.png",
+            "img2": "https://i.ibb.co/KcLgW4GL/Automatic-HDPE2.jpg",
+            "img3": "https://i.ibb.co/qMSp1Y42/Automatic-HDPE-3.png",
             "title": "Automatic HDPE",
-            "des": "An Automatic HDPE (High-Density Polyethylene) machine is used to manufacture, mold, or process HDPE products automatically with minimal human effort. HDPE is a strong, durable, and lightweight thermoplastic polymer widely used in packaging, piping, containers, and industrial applications."
+            "des": "An Automatic HDPE (High-Density Polyethylene) machine is used to manufacture, mold, or process HDPE products automatically with minimal human effort. HDPE is a strong, durable, and lightweight thermoplastic polymer widely used in packaging, piping, containers, and industrial applications.",
+            "Material": "HDPE / PE / PP(depending on line)",
+            "Productioncapacity": "20–1000 kg/hr",
+            "Powerrequirement": "20–250 kW",
+            "Automation": "PLC + HMI / Fully automatic or semi-automatic.",
+            "Coolingsystem": "Water cooling tanks / air cooling, vacuum calibrators for pipes.",
+            "Voltage": "220V / 380–440V / 415V three-phase (50/60 Hz) depending on model & country."
         },
-         {
+        {
             "id": "2",
-            "img": "https://i.ibb.co/Swwcy9C2/CNC-Machine.png",
+            "img1": "https://i.ibb.co/Swwcy9C2/CNC-Machine.png",
+            "img2": "https://i.ibb.co/fVcHy1BM/CNC-Machine2.png",
+            "img3": "https://www.cncmasters.com/wp-content/uploads/2022/05/cnc-machine-diagram.jpg",
             "title": "CNC Machine",
-            "des": " A Heavy Duty Lathe Machine is a powerful and robust machine tool designed for cutting, shaping, drilling, facing, turning, and threading heavy and hard workpieces (usually metals). Unlike light or medium lathes, it is built with stronger bed, spindle, and bearings to handle large, heavy, and tough materials with precision.It’s widely used in industries where continuous machining of large components is required."
+            "des": " A Heavy Duty Lathe Machine is a powerful and robust machine tool designed for cutting, shaping, drilling, facing, turning, and threading heavy and hard workpieces (usually metals). Unlike light or medium lathes, it is built with stronger bed, spindle, and bearings to handle large, heavy, and tough materials with precision.It’s widely used in industries where continuous machining of large components is required.",
+            "Material": "Steel, aluminium, plastics, etc.",
+            "Productioncapacity": "Job-dependent — throughput measured in cycle time; small shops: few parts/hr → production cells: dozens–hundreds/day",
+            "Powerrequirement": "2–30+ kW",
+            "Automation": "CNC control",
+            "Coolingsystem": "Flood coolant / mist / through-spindle coolant",
+            "Voltage": "Typically 200–240 V single-phase (small) or 400–480 V three-phase for industrial units; check nameplate."
         },
-          {
+        {
             "id": "3",
-            "img": "https://i.ibb.co/mVTcBS6d/VMC-machine.png",
+            "img1": "https://i.ibb.co/mVTcBS6d/VMC-machine.png",
+            "img2": "https://i.ibb.co/FkbC6q0T/VMC-machine2.png",
+            "img3": "https://5.imimg.com/data5/QO/DB/MY-36013066/vmc.jpg",
             "title": "VMC Machine",
-            "des": "  A VMC (Vertical Machining Center) is a type of CNC machine where the spindle is oriented vertically. It is mainly used for milling, drilling, tapping, and boring operations on metal or other solid materials with high accuracy.It’s like a CNC milling machine, but designed with vertical orientation — making it ideal for precision parts."
+            "des": "  A VMC (Vertical Machining Center) is a type of CNC machine where the spindle is oriented vertically. It is mainly used for milling, drilling, tapping, and boring operations on metal or other solid materials with high accuracy.It’s like a CNC milling machine, but designed with vertical orientation — making it ideal for precision parts.",
+            "Material": "Metals (steel, aluminium), plastics",
+            "Productioncapacity": "Throughput depends on cycle time — commonly used for batch production",
+            "Powerrequirement": "5–50 kW",
+            "Automation": "CNC with PLC/HMI; fully automatic toolchanger options.",
+            "Coolingsystem": "Flood coolant systems / chip conveyors / coolant tanks.",
+            "Voltage": "208–480 V three-phase."
         },
-         {
+        {
             "id": "4",
-            "img": "https://i.ibb.co/fY28TbF0/Embroidery-Machine.png",
+            "img1": "https://i.ibb.co/fY28TbF0/Embroidery-Machine.png",
+            "img2": "https://i.ibb.co/xSvyC911/Embroidery-Machine2.png",
+            "img3": "https://www.nicepng.com/png/detail/959-9590775_happy-japan-multi-head-embroidery-machine-embroidery-machine.png",
             "title": "Embroidery Machine",
-            "des": " An Embroidery Machine is a specialized sewing machine designed to automatically create decorative stitching patterns, logos, and designs on fabric. Unlike a normal sewing machine, it is computer-controlled and follows digital embroidery patterns (design files) to produce precise and consistent embroidery work."
-        },
-         {
-            "id": "4",
-            "img": "https://i.ibb.co/v6YDGXRF/Automatic-mobile-accessories-making-machine.png",
-            "title": "Mobile Accessories Making Machine",
-            "des": "An Automatic Mobile Accessories Making Machine is a modern, computer-controlled machine designed to manufacture different types of mobile phone accessories such as chargers, USB cables, earphones, cases, tempered glass, and other electronic components — with minimal human effort.It integrates automation, precision tools, and electronic assembly to ensure fast, consistent, and high-quality production."
+            "des": " An Embroidery Machine is a specialized sewing machine designed to automatically create decorative stitching patterns, logos, and designs on fabric. Unlike a normal sewing machine, it is computer-controlled and follows digital embroidery patterns (design files) to produce precise and consistent embroidery work.",
+            "Material": "Textile threads, fabrics",
+            "Productioncapacity": "200–2,000+ garments/day per multi-head set",
+            "Powerrequirement": "0.2–3 kW per head",
+            "Automation": "Semi-automatic → Fully automatic",
+            "Cooling-system": "Air blowers for lint removal; some systems use suction for waste thread.",
+            "Voltage": "110–230 V single-phase"
         },
         {
             "id": "5",
-            "img": "https://i.ibb.co/cXr4wB8F/Heavy-Duty-Lathe-Machine.jpg",
-            "title": "Heavy Duty Lathe Machine",
-            "des": "A Heavy Duty Lathe Machine is a powerful and robust machine tool designed for cutting, shaping, drilling, facing, turning, and threading heavy and hard workpieces (usually metals). Unlike light or medium lathes, it is built with stronger bed, spindle, and bearings to handle large, heavy, and tough materials with precision.It’s widely used in industries where continuous machining of large components is required."
+            "img1": "https://i.ibb.co/v6YDGXRF/Automatic-mobile-accessories-making-machine.png",
+            "img2": "https://i.ibb.co/mZSsFhm/Automatic-mobile-accessories-making-machine-2.jpg",
+            "img3": "https://s.alicdn.com/@sc04/kf/H1d83b37145274bddbf0256bde744962da/Customize-Plastic-Mobile-Cell-Phone-Case-Cover-Small-Making-Production-Manufacturing-Injection-Molding-Machine.png_300x300.jpg",
+            "title": "Mobile Accessories Making Machine",
+            "des": "An Automatic Mobile Accessories Making Machine is a modern, computer-controlled machine designed to manufacture different types of mobile phone accessories such as chargers, USB cables, earphones, cases, tempered glass, and other electronic components — with minimal human effort.It integrates automation, precision tools, and electronic assembly to ensure fast, consistent, and high-quality production.",
+            "Material": "Plastics, metal inserts, PCBs",
+            "Productioncapacity": "Highly variable — from a few hundred pieces/day",
+            "Powerrequirement": "1–100 kW depending on sub-equipment",
+            "Automation": "Typically semi-automatic to fully automated with PLCs / robotic feeders.",
+            "Coolingsystem": "Air cooling for electronics; water cooling for molds/extruders.",
+            "Voltage": "220–415 V three-phase for industrial cells; smaller stations 110–240V."
         },
-         {
+        {
             "id": "6",
-            "img": "https://i.ibb.co/gFTx2RRJ/High-speed-plastic-mixer-machines.jpg",
-            "title": "High speed plastic mixer Machines",
-            "des": "A High-Speed Plastic Mixer Machine is an industrial machine used to mix, blend, and homogenize plastic raw materials (such as PVC, PE, PP, HDPE, and additives) at high speed. It ensures uniform mixing before extrusion, molding, or other processing. These machines are widely used in the plastic, chemical, and polymer industries."
+            "img1": "https://i.ibb.co/cXr4wB8F/Heavy-Duty-Lathe-Machine.jpg",
+            "img2": "https://i.ibb.co/3mHB8W95/Heavy-Duty-Lathe-Machine2.jpg",
+            "img3": "https://5.imimg.com/data5/SELLER/Default/2022/6/TC/UQ/TM/3727168/7-feet-heavy-duty-lathe-machine.png",
+            "title": "Heavy Duty Lathe Machine",
+            "des": "A Heavy Duty Lathe Machine is a powerful and robust machine tool designed for cutting, shaping, drilling, facing, turning, and threading heavy and hard workpieces (usually metals). Unlike light or medium lathes, it is built with stronger bed, spindle, and bearings to handle large, heavy, and tough materials with precision.It’s widely used in industries where continuous machining of large components is required.",
+            "Material": "Steel, cast iron, aluminium",
+            "Productioncapacity": "Cycle/time dependent — production lathes output parts/hr depending on operation",
+            "Powerrequirement": "3–50 kW",
+            "Automation": "Manual to CNC; many heavy lathes are CNC-controlled for production runs.",
+            "Coolingsystem": "Flood coolant systems / chip conveyors.",
+            "Voltage": "220–480 V three-phase"
         },
-         {
+        {
             "id": "7",
-            "img": "https://i.ibb.co/zWnDHyhS/Hydraulic-Baling-Press-machine.jpg",
-            "title": "Hydraulic Baling Press Machine",
-            "des": "A Hydraulic Baling Press Machine is an industrial machine that uses hydraulic power to compress waste or scrap materials (like paper, plastic, cotton, cardboard, iron scrap, aluminum, etc.) into compact bales for easy storage, handling, and transportation.It’s widely used in recycling, textile, and manufacturing industries to reduce material volume and save space."
+            "img1": "https://i.ibb.co/gFTx2RRJ/High-speed-plastic-mixer-machines.jpg",
+            "img2": "https://i.ibb.co/KcH61Rh5/High-speed-plastic-mixer-machines2.jpg",
+            "img3": "https://5.imimg.com/data5/SELLER/Default/2024/7/436581026/QB/ZD/MU/14900571/high-speed-mixer-500x500.png",
+            "title": "High speed plastic mixer Machines",
+            "des": "A High-Speed Plastic Mixer Machine is an industrial machine used to mix, blend, and homogenize plastic raw materials (such as PVC, PE, PP, HDPE, and additives) at high speed. It ensures uniform mixing before extrusion, molding, or other processing. These machines are widely used in the plastic, chemical, and polymer industries.",
+            "Material": "PE/PP/HDPE/PP resin + additives",
+            "Productioncapacity": "Batch mixers: 50–2000 kg/batch",
+            "Powerrequirement": "1–100 kW",
+            "Automation": "Manual/semi-auto to fully automatic with PLC control",
+            "Coolingsystem": "Air (high-speed) or water cooling for extruder barrels; mixers often no cooling or jacketed with water.",
+            "Voltage": "220/380/415/440 V"
         },
-          {
+        {
             "id": "8",
-            "img": "https://i.ibb.co/C3DR04bQ/Hydraulic-power-press-machine.png",
-            "title": "Hydraulic power press Machine",
-            "des": "A Hydraulic Power Press Machine is a machine tool that uses a hydraulic cylinder system to generate compressive force for shaping, cutting, pressing, bending, or punching metal and other materials. Unlike mechanical presses, it provides consistent pressure throughout the stroke, making it ideal for precision and heavy-duty work."
+            "img1": "https://i.ibb.co/zWnDHyhS/Hydraulic-Baling-Press-machine.jpg",
+            "img2": "https://i.ibb.co/TqR1MyWD/Hydraulic-Baling-Press-machine2.png",
+            "img3": "https://iirorwxhnjrklr5q.leadongcdn.com/cloud/lpBprKmjlrSRrjkrnmnmio/HSN721.jpg",
+            "title": "Hydraulic Baling Press Machine",
+            "des": "A Hydraulic Baling Press Machine is an industrial machine that uses hydraulic power to compress waste or scrap materials (like paper, plastic, cotton, cardboard, iron scrap, aluminum, etc.) into compact bales for easy storage, handling, and transportation.It’s widely used in recycling, textile, and manufacturing industries to reduce material volume and save space.",
+            "Material": "Cardboard, plastics, textile bales",
+            "Productioncapacity": "0.05–2 ton bales",
+            "Powerrequirement": "1.5–30 kW",
+            "Automation": "Manual/semi-auto to fully automatic with PLC control",
+            "Coolingsystem": "Air (high-speed) or water cooling for extruder barrels; mixers often no cooling or jacketed with water.",
+            "Voltage": "220/380/415/440 V"
         },
-         {
+        {
             "id": "9",
-            "img": "https://i.ibb.co/v4Mn4CTL/Injection-Molding-Machine.png",
-            "title": "Injection Molding Machine",
-            "des": "An Injection Molding Machine is a manufacturing machine used to produce plastic products by injecting molten plastic material into a mold, where it cools and solidifies into the desired shape. It is one of the most widely used machines in the plastic industry for mass production of plastic parts with high precision and efficiency."
+            "img1": "https://i.ibb.co/C3DR04bQ/Hydraulic-power-press-machine.png",
+            "img2": "https://i.ibb.co/jPkh0tFG/Hydraulic-power-press-machine2.jpg",
+            "img3": "https://images.jdmagicbox.com/rep/b2b/straightening-press/straightening-press-5.jpg?impolicy=queryparam&im=AspectCrop=(360,360),xPosition=.5,yPosition=.5",
+            "title": "Hydraulic power press Machine",
+            "des": "A Hydraulic Power Press Machine is a machine tool that uses a hydraulic cylinder system to generate compressive force for shaping, cutting, pressing, bending, or punching metal and other materials. Unlike mechanical presses, it provides consistent pressure throughout the stroke, making it ideal for precision and heavy-duty work.",
+            "Material": "Metals (steel sheets, etc.)",
+            "Productioncapacity": "Production measured parts/hr",
+            "Powerrequirement": "2–75 kW",
+            "Automation": "Semi-automatic to fully automatic with PLC and safety interlocks.",
+            "Coolingsystem": "Cooling: hydraulic oil coolers; sometimes water-cooled systems for high duty cycles.",
+            "Voltage": "220–440 V three-phase typical"
         },
-         {
+        {
             "id": "10",
-            "img": "https://i.ibb.co/3yndHb9B/Plastic-Extrusion-Machine.jpg",
-            "title": "Plastic Extrusion Machine",
-            "des": "A Plastic Extrusion Machine is an industrial machine used to melt and shape plastic materials by forcing them through a die to produce continuous products of a fixed cross-sectional profile.It is one of the most widely used processes in the plastic industry for manufacturing pipes, profiles, sheets, films, and cables."
+            "img1": "https://i.ibb.co/v4Mn4CTL/Injection-Molding-Machine.png",
+            "img2": "https://i.ibb.co/mCYmP6rj/Injection-Molding-Machine-2.png",
+            "img3": "https://control.com/uploads/thumbnails/_16_9_456_257/-header-sumitomo.jpg",
+            "title": "Injection Molding Machine",
+            "des": "An Injection Molding Machine is a manufacturing machine used to produce plastic products by injecting molten plastic material into a mold, where it cools and solidifies into the desired shape. It is one of the most widely used machines in the plastic industry for mass production of plastic parts with high precision and efficiency.",
+            "Material": "ABS, PP, PE, HDPE, PS, nylon",
+            "Productioncapacity": "Shot-based; hourly output depends on cycle time: small machines produce hundreds–thousands of parts/day; larger: tens of thousands.",
+            "Powerrequirement": "5–250+ kW",
+            "Automation": "Hydraulic, hydraulic-electric hybrid, or all-electric; PLC/NC control; fully automatic mold cycles.",
+            "Coolingsystem": "Water cooling for molds, chillers for temperature control; sometimes air for cooling small parts.",
+            "Voltage": "220–480 V three-phase"
         },
         {
             "id": "11",
-            "img": "https://i.ibb.co/zhJdGj2D/Plastic-Scrap-Grinding-Machine.jpg",
-            "title": "Plastic Scrap Grinding Machine",
-            "des": " A Plastic Scrap Grinding Machine is an industrial machine designed to crush, grind, and recycle plastic waste or scrap into smaller granules. These granules can then be reused in manufacturing processes like extrusion, molding, or film production, reducing material waste and production costs."
+            "img1": "https://i.ibb.co/3yndHb9B/Plastic-Extrusion-Machine.jpg",
+            "img2": "https://i.ibb.co/4ZysT98v/Plastic-Extrusion-Machine2.jpg",
+            "img3": "http://5.imimg.com/data5/SELLER/Default/2023/10/350625685/LQ/JC/WO/95219423/plastic-extrusion-machines-1000x1000.jpg",
+            "title": "Plastic Extrusion Machine",
+            "des": "A Plastic Extrusion Machine is an industrial machine used to melt and shape plastic materials by forcing them through a die to produce continuous products of a fixed cross-sectional profile.It is one of the most widely used processes in the plastic industry for manufacturing pipes, profiles, sheets, films, and cables.",
+            "Material": "PE, PP, PVC, ABS, etc.",
+            "Productioncapacity": "5–1400 kg/hr",
+            "Powerrequirement": "10–300 kW",
+            "Automation": "PLC with HMI; fully automatic lines available.",
+            "Coolingsystem": "Water baths, vacuum tanks, fan cooling, chill rolls depending on product.",
+            "Voltage": "220/380/415/440 V 3-phase"
         },
         {
             "id": "12",
-            "img": "https://i.ibb.co/FLbrWfkn/PVC-Cable-Machine.png",
+            "img1": "https://i.ibb.co/zhJdGj2D/Plastic-Scrap-Grinding-Machine.jpg",
+            "img2": "https://i.ibb.co/svMn9w3B/Plastic-Scrap-Grinding-Machine2.jpg",
+            "img3": "http://5.imimg.com/data5/SELLER/Default/2025/6/519258986/NT/PQ/RO/14900571/plastic-scrap-grinding-machine-1000x1000.png",
+            "title": "Plastic Scrap Grinding Machine",
+            "des": " A Plastic Scrap Grinding Machine is an industrial machine designed to crush, grind, and recycle plastic waste or scrap into smaller granules. These granules can then be reused in manufacturing processes like extrusion, molding, or film production, reducing material waste and production costs.",
+            "Material": "All plastics (PP, PE, PVC, PET, etc.)",
+            "Productioncapacity": "40–400 kg/hr",
+            "Powerrequirement": "1.5–25 HP",
+            "Automation": "Manual to semi-automatic",
+            "Coolingsystem": "Air/blower for dust extraction; blades & rotor cooling by duty cycle",
+            "Voltage": "Commonly 220–440 V"
+        },
+        {
+            "id": "13",
+            "img1": "https://i.ibb.co/FLbrWfkn/PVC-Cable-Machine.png",
+            "img2": "https://i.ibb.co/7t8qTpQ4/PVC-Cable-Machine2.jpg",
+            "img3": "https://5.imimg.com/data5/SELLER/Default/2024/5/420640687/ON/VE/RV/1971960/electrical-cable-extruder.jpeg",
             "title": "PVC Cable Machine",
-            "des": "A PVC Cable Machine is a specialized industrial machine used to manufacture insulated electrical cables and wires by coating conductive cores (copper/aluminum) with PVC (Polyvinyl Chloride) insulation or sheathing.This process ensures safety, durability, and flexibility of cables used in domestic, commercial, and industrial applications."
+            "des": "A PVC Cable Machine is a specialized industrial machine used to manufacture insulated electrical cables and wires by coating conductive cores (copper/aluminum) with PVC (Polyvinyl Chloride) insulation or sheathing.This process ensures safety, durability, and flexibility of cables used in domestic, commercial, and industrial applications.",
+            "Material": "Copper/aluminum conductors + PVC/PE insulation",
+            "Productioncapacity": "Extrusion capacity: 30–300+ kg/hr",
+            "Powerrequirement": "3–250 kW depending on line",
+            "Automation": "Mostly PLC/automatic lines with pay-off, extruder, cooling, take-up and coiler automation.",
+            "Coolingsystem": "Water troughs, cooling tanks, vacuum calibrators, air cooling for jackets.",
+            "Voltage": "220/380/415/440 V"
         }
     ]
 }

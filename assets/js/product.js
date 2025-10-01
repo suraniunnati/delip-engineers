@@ -16,9 +16,9 @@ function view(arr) {
   return arr
     .map((ele) => {
       return ` <div class="productBox">
-      <a href="singleProduct.html?id=${ele.id}">
+      <a href="singleproduct.html?id=${ele.id}">
                 <div class="img p-10">
-                    <img src="${ele.img}" alt="${ele.title}">
+                    <img src="${ele.img1}" alt="${ele.title}">
                 </div>
                 <div class="relative p-20 h-full">
                     <div class="shap"></div>
@@ -29,7 +29,7 @@ function view(arr) {
                         <p><span class="font-bold">Details: </span>${ele.des}</p>
                     </div>
                     <div class="custom-btn flex justify-center items-center pt-20">
-                        <a href="" class="btn btn-orange read-more">Read More</a>
+                        <a href="singleproduct.html?id=${ele.id}" class="btn btn-orange read-more">Read More</a>
                     </div>
                 </div>
                   </a>

@@ -75,7 +75,8 @@
 .about-part .title::before,
 .our-machines .machine-title::before,
 .product .productBox .title::before,
-.about-us .title h2::before{
+.about-us .title h2::before,
+#singlemain .title::before{
   @apply content-[''] absolute bottom-0 left-0 h-3 w-50 bg-orange border-s-4 border-dotted rounded-e-sm;
 }
 
@@ -153,7 +154,7 @@
   @apply flex gap-10 font-medium mb-15;
 }
 .contact ul li a{
-  @apply font-medium text-body-2
+  @apply font-medium text-body-3 text-gray-2; 
 }
 
 .contact .map {
@@ -214,8 +215,26 @@
  .highlight-icon{
   @apply bg-orange flex justify-center items-center h-35 w-35 rounded-full text-xl text-white;
 }
+.our-complany:hover .highlight-icon{
+  @apply bg-black duration-300
+}
+.our-complany:hover .highlight-icon i{
+  @apply text-orange
+}
 .our-complany{
-  @apply flex flex-col justify-center  bg-orange/10 rounded-[20px] p-30 
+  @apply flex flex-col justify-center  bg-orange/10 rounded-[20px] p-30 relative overflow-hidden hover:shadow;
+}
+.our-complany::before{
+  @apply content-[''] absolute right-0 top-0 h-[20%] w-[30%] bg-black duration-500;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.our-complany::after{
+  @apply content-[''] absolute right-0 top-0 h-[33%] w-[30%] bg-orange/50 duration-300;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.our-complany:hover::before,
+.our-complany:hover::after{
+  @apply w-full
 }
 
 /* services */
@@ -240,8 +259,15 @@
 .process-items{
   @apply flex flex-col items-center justify-center p-30 text-center rounded-xl bg-orange/50;
 }
+.process-items:hover{
+  @apply shadow;
+  background: linear-gradient(rgba(255, 166, 0, 0.895),rgba(255, 166, 0, 0.078));
+}
 .process-items .process-icon{
   @apply text-orange text-[30px]
+}
+.process-items:hover .process-icon{
+  @apply text-white
 }
 .process-items .process-img{
   @apply pt-[66.67%] w-full h-full relative mt-10
@@ -249,5 +275,57 @@
 .process-items .process-img img{
   @apply absolute top-0 left-0 w-full h-full object-cover rounded-xl
 }
+.arrow{
+  @apply max-768:rotate-[90deg] max-768:w-[100px]
+}
+#singlemain{
+  @apply flex flex-wrap justify-center items-center min-1512:m-80 p-20  rounded-2xl shadow-2xl bg-white;
+}
+#singlemain table tr td,
+#singlemain ul li span{
+  @apply mt-20 text-body-2;
+}
+#singlemain ul li span,
+#singlemain table tr td:nth-child(1){
+  @apply font-bold mr-10 flex
+}
+#singlemain table tr td:nth-child(2){
+  @apply px-10
+}
+#singlemain .swiper-wrapper{
+  @apply rounded-xl w-full;
+}
+#singlemain .swiper-wrapper .swiper-slide{
+  @apply flex justify-center items-center bg-orange/20 rounded-xl p-20;
+}
+#singlemain .swiper-wrapper .swiper-slide .img{
+  @apply pt-[77.59%] relative w-full bg-white rounded-xl;
+}
+#singlemain .swiper-wrapper .swiper-slide .img img{
+  @apply absolute top-0 left-0 w-full h-full p-20;
+}
+#singlemain .swiper-pagination{
+  @apply relative mt-30; 
+}
+#singlemain .swiper-pagination-bullet {
+  background:rgba(255, 166, 0, 0.384);         /* default color */
+  width: 20px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 50px;       /* round bullets */
+  transition: all 0.3s ease;
+  margin: 0 6px !important; /* spacing between dots */
+}
 
+/* Active bullet */
+#singlemain .swiper-pagination-bullet-active {
+  background: orange;     /* your brand color */
+  transform: scale(1.3);    /* enlarge active dot */
+  box-shadow: 0 0 6px gray;
+}
 
+/* Positioning (if needed) */
+#singlemain .swiper-pagination {
+  bottom: 15px !important;
+  text-align: center;
+}
