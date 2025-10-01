@@ -54,4 +54,22 @@
   }
 });
 
+// year
  document.getElementById("year").textContent = new Date().getFullYear();
+
+//  wow-animation
+   new WOW().init();
+
+   window.addEventListener("load", function () {
+    const loader = document.querySelector(".loder");
+    if (loader) {
+        // Smooth fade out effect
+        loader.style.transition = "opacity 3s ease";
+        loader.style.opacity = "0";
+
+        // After fade-out, remove it (optional)
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 3000);
+    }
+});

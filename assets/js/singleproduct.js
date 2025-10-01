@@ -23,7 +23,7 @@ fetch(`http://localhost:3000/product?id=${id}`)
 function view(arr) {
     return arr.map((ele) => {
         return `<div id="singlemain">
-                <div class="lg:w-6/12 w-full flex justify-center items-center p-20">
+                <div class="lg:w-6/12 w-full flex justify-center items-center p-20 wow animate__animated animate__fadeInLeft">
                  <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                         <div class="swiper-slide"><div class="img"><img src="${ele.img1}"></div></div>
@@ -33,7 +33,7 @@ function view(arr) {
                         <div class="swiper-pagination"></div>
                     </div>
                </div>
-                <div class="lg:w-6/12 w-full pl-20 ">
+                <div class="lg:w-6/12 w-full pl-20 wow animate__animated animate__fadeInRight">
                 <div class="title title-bold relative mb-20 pb-5">
                 <h3>${ele.title}</h3>
                 </div>

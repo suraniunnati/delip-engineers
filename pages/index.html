@@ -20,13 +20,23 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <!-- slider -->
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- animation -->
+     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+    <div class="loder">
+         <div class="window">
+        <span></span>
+ </div>
+    </div>
+
     <!-- header Start -->
-    <header>
+    <header class="wow animate__animated animate__fadeInDown">
         <div class="headtop min-768:h-[35%] flex items-center min-768:px-50 p-5 w-full">
             <div class="info w-full">
                 <ul class="flex max-768:flex-col justify-end w-full gap-5 min-768:gap-40 font-semibold text-body-3">
@@ -44,7 +54,7 @@
         </div>
         <div class="headbottom h-[65%] flex items-center justify-between max-768:px-20">
             <div class="logo font-bold text-3xl">
-               <a href="index.html"><img src="../assets/images/big-logo.png" alt="logo" width="250"></a>
+                <a href="index.html"><img src="../assets/images/big-logo.png" alt="logo" width="250"></a>
             </div>
             <nav class="w-full max-768:hidden block">
                 <ul>
@@ -73,15 +83,15 @@
 
     <!-- banner Start -->
     <section class="banner">
-        <div class="banner-inner flex-col text-center">
-            <div class="title title-white">
+        <div class=" banner-inner flex-col text-center">
+            <div class="title title-white wow animate__animated animate__rotateIn">
                 <h1>Precision Machines for Modern Industries</h1>
             </div>
-            <div class="content gray text-body-1">
+            <div class="content gray text-body-1 wow animate__animated animate__pulse">
                 <p> Delivering high-performance, durable, and cost-effective solutions to power your production with
                     accuracy.</p>
             </div>
-            <div class="custom-btn mt-20">
+            <div class="custom-btn mt-20 wow animate__animated animate__pulse">
                 <a href="" class="btn btn-orange">Explore Our Machines</a>
             </div>
         </div>
@@ -92,7 +102,7 @@
     <section class="services-part">
         <div class="inner grid md:grid-cols-3 sm:grid-cols-1 gap-30 p-40">
             <!-- Card 1 -->
-            <div class="card">
+            <div class="card wow animate__animated animate__backInLeft">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="../assets/images/VMC-machine.png" alt="VMC Machine"
@@ -115,7 +125,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card">
+            <div class="card wow animate__animated animate__backInDown">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="../assets/images/Automatic-HDPE.png" alt="Automatic HDPE"
@@ -137,7 +147,7 @@
                 </div>
             </div>
             <!-- card-3 -->
-            <div class="card">
+            <div class="card wow animate__animated animate__backInRight">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="../assets/images/CNC-Machine.png" alt="CNC Machine"
@@ -163,109 +173,111 @@
     <!-- services-part End -->
 
     <!-- about-part Srart -->
-     <section class="about-part p-40">
+    <section class="about-part p-40">
         <div class="flex flex-wrap justify-center items-center">
-            <div class="lg:w-5/12 w-full max-1023:pe-0 pe-30 max-1023:order-2 max-1023:mt-20">
+            <div class="wow wow animate__animated animate__backInLeft lg:w-5/12 w-full max-1023:pe-0 pe-30 max-1023:order-2 max-1023:mt-20">
                 <div class="title title-bold mb-20 relative">
                     <h2>About Our Machines</h2>
                 </div>
                 <div class="content">
                     <p>
-                        Our machines are designed to deliver <span class="font-semibold">precision, performance, 
-        and durability</span>. From <strong>VMC and CNC machines</strong> to 
-        <strong>Automatic HDPE equipment</strong>, each product is built with advanced 
-        technology to meet the needs of modern industries.
+                        Our machines are designed to deliver <span class="font-semibold">precision, performance,
+                            and durability</span>. From <strong>VMC and CNC machines</strong> to
+                        <strong>Automatic HDPE equipment</strong>, each product is built with advanced
+                        technology to meet the needs of modern industries.
                     </p>
                     <p>
-                          Every machine undergoes <span class="font-semibold">strict quality testing</span> to ensure 
-        reliability and efficiency in heavy-duty operations. Whether it’s cutting, shaping, 
-        or high-speed production, our machines provide unmatched accuracy and long-lasting results.
+                        Every machine undergoes <span class="font-semibold">strict quality testing</span> to ensure
+                        reliability and efficiency in heavy-duty operations. Whether it’s cutting, shaping,
+                        or high-speed production, our machines provide unmatched accuracy and long-lasting results.
                     </p>
                     <p>
-                         With a focus on <span class="font-semibold">innovation and customer satisfaction</span>, 
-        we continuously upgrade our designs to support industries in achieving higher 
-        productivity at lower costs.
+                        With a focus on <span class="font-semibold">innovation and customer satisfaction</span>,
+                        we continuously upgrade our designs to support industries in achieving higher
+                        productivity at lower costs.
                     </p>
                 </div>
                 <div class="custom-btn mt-20">
                     <a href="about.html" class="btn btn-orange">Read More</a>
                 </div>
             </div>
-            <div class="lg:w-5/12 w-full about-inner-part max-1023:ps-0 ps-[5%] max-1023:order-1">
+            <div class=" wow animate__animated animate__backInRight lg:w-5/12 w-full about-inner-part max-1023:ps-0 ps-[5%] max-1023:order-1">
                 <div class="flex gap-15">
-                     <img src="../assets/images/about-img-1.jpeg" alt="">
-                <img src="../assets/images/about-img-2.webp" alt="">
+                    <img src="../assets/images/about-img-1.jpeg" alt="about">
+                    <img src="../assets/images/about-img-2.webp" alt="about">
                 </div>
-               <div class="flex gap-15 mt-10 ms-30">
-                <img src="../assets/images/about-img-3.jpg" alt="">
-                <img src="../assets/images/about-img-4.jpg" alt="">
+                <div class="flex gap-15 mt-10 ms-30">
+                    <img src="../assets/images/about-img-3.jpg" alt="about">
+                    <img src="../assets/images/about-img-4.jpg" alt="about">
                 </div>
             </div>
         </div>
-     </section>
-     <!-- about-part End -->
+    </section>
+    <!-- about-part End -->
 
-     <!-- our-machines Start -->
-      <section class="our-machines relative px-40 py-30">
-         <div class="min-768:py-40">
+    <!-- our-machines Start -->
+    <section class="our-machines relative px-40 py-30">
+        <div class="min-768:py-40 wow animate__animated animate__bounceInDown">
             <div class="title machine-title relative">
                 <h2>Our Machines</h2>
             </div>
             <div class="content min-768:!w-[70%] text-body-2 mt-20">
-                <p>We offer advanced industrial machines like CNC, VMC, HDPE, and lathe machines, built for precision, durability, and efficiency. Designed for diverse industries, our solutions boost productivity, reduce downtime, and deliver superior results.</p>
-            </div>
-         </div>
-        
-  <div class="slider-column w-full max-768:mt-30">
-    <div class="swiper swiper-slider w-full">
-      <div class="swiper-wrapper w-full">
-        <div class="swiper-slide">
-            <img src="../assets/images/Automatic-HDPE.png" alt="Swiper" width="500" height="300">
-            <div class="text title title-white title-bold">
-                <h3>Automatic HDPE</h3>
+                <p>We offer advanced industrial machines like CNC, VMC, HDPE, and lathe machines, built for precision,
+                    durability, and efficiency. Designed for diverse industries, our solutions boost productivity,
+                    reduce downtime, and deliver superior results.</p>
             </div>
         </div>
-        <div class="swiper-slide">
-            <img src="../assets/images/CNC-Machine.png" alt="Swiper" width="500" height="300">
-             <div class="text title title-white title-bold">
-                <h3>CNC Machine</h3>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <img src="../assets/images/VMC-machine.png" alt="Swiper" width="500" height="300">
-             <div class="text title title-white title-bold">
-                <h3>VMC Machine</h3>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <img src="../assets/images/Embroidery-Machine.png" alt="Swiper" width="500" height="300">
-             <div class="text title title-white title-bold">
-                <h3>Embroidery Machine</h3>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <img src="../assets/images/CNC-Machine.png" alt="Swiper" width="500" height="300">
-             <div class="text title title-white title-bold">
-                <h3>CNC Machine</h3>
-            </div>
-        </div>
-      </div>
-    
-    </div>
-      <span class="swiper-button-prev">
-        <i class="fa-solid fa-circle-arrow-left fa-xl" style="color:  #000000;"></i>
-      </span>
-      <span class="swiper-button-next">
-         <i class="fa-solid fa-circle-arrow-right fa-xl" style="color:  #000000;"></i>
-      </span>
-  </div>
 
-</main>
-      </section>
-      <!-- our-machines End -->
+        <div class="slider-column w-full max-768:mt-30">
+            <div class="swiper swiper-slider w-full">
+                <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide">
+                        <img src="../assets/images/Automatic-HDPE.png" alt="Swiper" width="500" height="300">
+                        <div class="text title title-white title-bold">
+                            <h3>Automatic HDPE</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/CNC-Machine.png" alt="Swiper" width="500" height="300">
+                        <div class="text title title-white title-bold">
+                            <h3>CNC Machine</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/VMC-machine.png" alt="Swiper" width="500" height="300">
+                        <div class="text title title-white title-bold">
+                            <h3>VMC Machine</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/Embroidery-Machine.png" alt="Swiper" width="500" height="300">
+                        <div class="text title title-white title-bold">
+                            <h3>Embroidery Machine</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/CNC-Machine.png" alt="Swiper" width="500" height="300">
+                        <div class="text title title-white title-bold">
+                            <h3>CNC Machine</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <span class="swiper-button-prev">
+                <i class="fa-solid fa-circle-arrow-left fa-xl" style="color:  #000000;"></i>
+            </span>
+            <span class="swiper-button-next">
+                <i class="fa-solid fa-circle-arrow-right fa-xl" style="color:  #000000;"></i>
+            </span>
+        </div>
+
+        </main>
+    </section>
+    <!-- our-machines End -->
 
     <!-- footer Start -->
-    <footer>
+    <footer class="wow animate__animated animate__fadeInUp">
         <div class="footer-top flex max-768:flex-wrap justify-evenly p-50 min-767:p-100 min-1024:p-70 gap-20">
             <div class="footer-part min-768:pe-30">
                 <div class="foot-logo">
@@ -275,18 +287,19 @@
                     <ul>
                         <li>
                             <div class="icon">
-                            <div class="icon">
-                                <i class="fa-solid fa-location-dot fa-xs"></i>
-                            </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot fa-xs"></i>
+                                </div>
                             </div>
                             <span>Factory:</span>
-                            <a href="https://maps.app.goo.gl/aCHJ2tRBbrLT1VxU6" target="_blank">Plot No. 14/A, G.V.V.M., Odhav, Ahmedabad-382415</a>
+                            <a href="https://maps.app.goo.gl/aCHJ2tRBbrLT1VxU6" target="_blank">Plot No. 14/A, G.V.V.M.,
+                                Odhav, Ahmedabad-382415</a>
                         </li>
                         <li>
                             <div class="icon">
-                            <div class="icon">
-                                <i class="fa-solid fa-location-dot fa-xs"></i>
-                            </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot fa-xs"></i>
+                                </div>
                             </div>
                             <span>Reg.Add:</span>
                             <a href="">A/02, Shrinath Residency, Nr. Ashwamegh Society,<br> Nikol,Odhav Road, Odhav,
@@ -329,10 +342,10 @@
         </div>
         <div class="footer-bottom flex flex-wrap justify-between items-center mx-50 border-t py-15">
             <div class="copyright text-body-3">
-                 <p>© <span id="year" class="font-medium"></span> Dilip Engineers</p>
+                <p>© <span id="year" class="font-medium"></span> Dilip Engineers</p>
             </div>
             <div class="text-body-3 font-medium">
-                  <p>Website Maintained by Unnati Surani</p>
+                <p>Website Maintained by Unnati Surani</p>
             </div>
         </div>
     </footer>
@@ -340,6 +353,10 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="/assets/js/script.js"></script>
+ <script src="js/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/script.js"></script>
 
 </html>

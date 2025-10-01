@@ -1,3 +1,4 @@
+var products = []
 function productData() {
   fetch(`http://localhost:3000/product`)
     .then((r) => {
@@ -5,6 +6,7 @@ function productData() {
     })
     .then((res) => {
       console.log(res);
+        products = res
       document.getElementById("box").innerHTML = view(res);
     })
     .catch((err) => {
@@ -13,9 +15,12 @@ function productData() {
 }
 
 function view(arr) {
+  //  if (arr.length === 0) {
+  //   return <p class="text-center text-red-500 font-bold">No Products Found</p>;
+  // }
   return arr
     .map((ele) => {
-      return ` <div class="productBox">
+      return ` <div class="productBox wow animate__animated animate__fadeIn">
       <a href="singleproduct.html?id=${ele.id}">
                 <div class="img p-10">
                     <img src="${ele.img1}" alt="${ele.title}">
@@ -39,4 +44,12 @@ function view(arr) {
 }
 
 productData();
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  const keyword = e.target.value.toLowerCase();
+  const filtered = products.filter((p) => 
+    p.title.toLowerCase().includes(keyword) 
+  );
+  document.getElementById("box").innerHTML = view(filtered);
+});
 

@@ -19,11 +19,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+         <!-- animation -->
+     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <!-- header Start -->
-    <header>
+    <header class="wow animate__animated animate__fadeInDown">
         <div class="headtop min-768:h-[35%] flex items-center min-768:px-50 p-5 w-full">
             <div class="info w-full">
                 <ul class="flex max-768:flex-col justify-end w-full gap-5 min-768:gap-40 font-semibold text-body-3">
@@ -72,13 +76,22 @@
     <!-- mini-banner Start -->
     <div class="mini-banner py-50 max-768:pt-100">
         <div class="flex flex-col justify-center items-center text-center relative py-60">
-            <div class="title title-bold title-white p-10">
+            <div class="title title-bold title-white p-10 wow animate__animated animate__fadeIn">
                 <h2 class="h1 main-text absolute">Product</h2>
                 <h1 class="mt-10 ms-30 max-768:mt-20">Product(machines)</h1>
             </div>
         </div>
     </div>
     <!-- mini-banner End -->
+     <!-- search bar  -->
+    <div class="min-1024:px-50 pt-30 max-768:text-center text-right relative w-fit max-1024:m-auto ms-auto">
+        <input type="text" id="searchInput" placeholder="Search products..."
+            class="border " />
+        <div class="serchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>    
+    </div>
+     <!-- search bar end  -->
 
     <section class="px-50 product py-30 min-1024:py-80" id="box">
        
@@ -86,7 +99,7 @@
 
 
    <!-- footer Start -->
-    <footer>
+    <footer  class="wow animate__animated animate__fadeInUp">
         <div class="footer-top flex max-768:flex-wrap justify-evenly p-50 min-767:p-100 min-1024:p-70 gap-20">
             <div class="footer-part min-768:pe-30">
                 <div class="foot-logo">
@@ -160,7 +173,12 @@
     <!-- footer End -->
 </body>
 
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/product.js"></script>
+<script src="../assets/js/product.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="js/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/script.js"></script>
 
 </html>
