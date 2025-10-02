@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "build": "npx tailwindcss -i ./assets/css/app.css -o ./dist/style.css --watch"
   },
   "keywords": [],
@@ -13,7 +12,6 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
     "json-server": "^1.0.0-beta.3",
-    "tailwindcss": "^4.1.13",
-     "express": "^4.18.2"
+    "tailwindcss": "^4.1.13"
   }
 }
