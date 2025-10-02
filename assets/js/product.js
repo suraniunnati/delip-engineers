@@ -1,6 +1,6 @@
 var products = []
 function productData() {
-  fetch(`http://localhost:3000/product`)
+  fetch(`https://delip-engineers.onrender.com/product`)
     .then((r) => {
       return r.json();
     })

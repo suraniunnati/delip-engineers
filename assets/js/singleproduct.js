@@ -2,7 +2,7 @@ var a = new URLSearchParams(window.location.search)
 let id = a.get("id")
 console.log(id)
 
-fetch(`http://localhost:3000/product?id=${id}`)
+fetch(`https://delip-engineers.onrender.com/product?id=${id}`)
     .then((res) => {
         return res.json()
     })
