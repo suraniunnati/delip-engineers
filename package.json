@@ -13,7 +13,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
     "json-serve": "^0.1.0",
-    "json-server": "^1.0.0-beta.3",
+       "json-server": "^0.17.4",
     "tailwindcss": "^4.1.13"
   }
 }
