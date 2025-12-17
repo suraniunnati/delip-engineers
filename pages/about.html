@@ -4,8 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-     <link rel="icon" href="../assets/images/small-logo.png">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Us | Dilip Engineers | 20+ Years Experience in Industrial Machines</title>
+    <meta name="title" content="About Us | Dilip Engineers | 20+ Years Experience in Industrial Machines">
+    <meta name="description" content="Learn about Dilip Engineers - established in 2017 by Mr. Dilip R. Panchal with 20+ years of industry experience. Leading manufacturer of precision industrial machines in Ahmedabad, Gujarat.">
+    <meta name="keywords" content="Dilip Engineers, about us, industrial machine manufacturer, Ahmedabad, Gujarat, precision engineering, 20 years experience">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dilipengineers.com/pages/about.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dilipengineers.com/pages/about.html">
+    <meta property="og:title" content="About Us | Dilip Engineers | 20+ Years Experience">
+    <meta property="og:description" content="Learn about Dilip Engineers - established in 2017 with 20+ years of industry experience in precision industrial machines.">
+    <meta property="og:image" content="https://www.dilipengineers.com/assets/images/about-main.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Dilip Engineers">
+    <meta name="twitter:description" content="Established in 2017 with 20+ years of industry experience.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/small-logo.png" type="image/png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/dist/style.css">
 
     <!-- icon -->
@@ -22,7 +47,38 @@
 
          <!-- animation -->
      <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Dilip Engineers",
+      "description": "Learn about Dilip Engineers - established in 2017 with 20+ years of industry experience",
+      "url": "https://www.dilipengineers.com/pages/about.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.dilipengineers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://www.dilipengineers.com/pages/about.html"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -77,7 +133,7 @@
     <div class="mini-banner py-50 max-768:pt-100">
         <div class="flex flex-col justify-center items-center text-center relative py-60">
             <div class="title title-bold title-white wow animate__animated animate__fadeIn">
-                <h2 class="h1 main-text absolute">About</h2>
+                <h2 class="h1 main-text absolute" aria-hidden="true">About</h2>
                 <h1 class="mt-10 ms-30 max-768:mt-20">About Us</h1>
             </div>
         </div>
@@ -85,12 +141,13 @@
     <!-- mini-banner End -->
 
     <!-- about-us Start -->
-    <section class="about-us min-1024:px-50 flex flex-col items-center">
+    <main role="main">
+    <section class="about-us min-1024:px-50 flex flex-col items-center" aria-label="About Dilip Engineers">
         <div class="container mx-auto max-768:px-30 px-50 py-30 min-1024:py-80">
             <div class="flex flex-wrap justify-center items-center">
                 <div class="lg:w-6/12 w-full about-img h-full rounded-[20px] relative overflow-hidden wow animate__animated animate__backInLeft">
-                    <img src="../assets/images/about-main.jpg" alt="about-img" 
-                        class="w-full h-full object-cover rounded-[20px] shadow-lg min-1512:h-[480px]">
+                    <img src="../assets/images/about-main.jpg" alt="Dilip Engineers manufacturing facility and team" 
+                        class="w-full h-full object-cover rounded-[20px] shadow-lg min-1512:h-[480px]" loading="lazy" width="600" height="480">
                 </div>
                 <div class="lg:w-6/12 w-full about-content min-1023:pl-30 min-1024:pl-50 max-1023:mt-30 wow animate__animated animate__backInRight">
                     <div class="title title-bold mb-20 relative">
@@ -210,6 +267,7 @@
         </div>
     </section>
     <!-- about-us End -->
+    </main>
 
    <!-- footer Start -->
     <footer class="wow animate__animated animate__fadeInUp">
@@ -286,11 +344,11 @@
     <!-- footer End -->
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
- <script src="js/wow.min.js"></script>
+<!-- Scripts - Loaded at end for better performance -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
     integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/assets/js/script.js"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="/assets/js/script.js" defer></script>
 
 </html>

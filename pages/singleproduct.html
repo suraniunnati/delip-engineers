@@ -4,8 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>singleproduct</title>
-     <link rel="icon" href="../assets/images/small-logo.png">
+    
+    <!-- Primary Meta Tags (will be dynamically updated by JavaScript) -->
+    <title>Industrial Machine | Dilip Engineers</title>
+    <meta name="description" content="High-quality industrial machine from Dilip Engineers. Precision engineering solutions for modern industries.">
+    <meta name="keywords" content="industrial machine, precision machine, CNC, VMC, HDPE machine">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL (will be updated dynamically) -->
+    <link rel="canonical" href="https://www.dilipengineers.com/pages/singleproduct.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.dilipengineers.com/pages/singleproduct.html">
+    <meta property="og:title" content="Industrial Machine | Dilip Engineers">
+    <meta property="og:description" content="High-quality industrial machine from Dilip Engineers.">
+    <meta property="og:image" content="https://www.dilipengineers.com/assets/images/big-logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Industrial Machine | Dilip Engineers">
+    <meta name="twitter:description" content="High-quality industrial machine from Dilip Engineers.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/small-logo.png" type="image/png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/dist/style.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -78,15 +102,20 @@
     <div class="mini-banner py-50 max-768:pt-100">
         <div class="flex flex-col justify-center items-center text-center relative py-60">
             <div class="title title-bold title-white p-10 wow animate__animated animate__fadeIn">
-                <h2 class="h1 main-text absolute">Product</h2>
-                <h1 class="mt-10 ms-30 max-768:mt-20">Single Product</h1>
+                <h2 class="h1 main-text absolute" aria-hidden="true">Product</h2>
+                <h1 class="mt-10 ms-30 max-768:mt-20" id="product-title">Product Details</h1>
             </div>
         </div>
     </div>
     <!-- mini-banner End -->
 
-        <div id="shown" >
+        <main role="main">
+        <div id="shown" aria-label="Product details">
+            <noscript>
+                <p class="text-center">Please enable JavaScript to view product details. <a href="../pages/contact.html">Contact us</a> for more information.</p>
+            </noscript>
         </div>
+        </main>
 
    <!-- footer Start -->
     <footer class="wow animate__animated animate__fadeInUp">
@@ -162,23 +191,12 @@
     </footer>
     <!-- footer End -->
 </body>
-<script src="../assets/js/product.js"></script>
-<script src="../assets/js/singleproduct.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
- <script src="js/wow.min.js"></script>
+<!-- Scripts - Loaded at end for better performance -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
     integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/assets/js/script.js"></script>
-
-<script>
-    var swipers = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-        },
-    });
-</script>
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="/assets/js/script.js" defer></script>
+<script src="../assets/js/singleproduct.js" defer></script>
 
 </html>

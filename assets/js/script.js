@@ -1,9 +1,13 @@
  const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden");
+      menuBtn.setAttribute("aria-expanded", isHidden ? "true" : "false");
+    });
+  }
 
 
   const swiper = new Swiper(".swiper-slider", {
